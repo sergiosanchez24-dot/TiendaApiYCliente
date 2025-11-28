@@ -1,0 +1,55 @@
+{
+  "nombre": "SuperCars Shop",
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "GT"
+    },
+    {
+      "id": 2,
+      "nombre": "Supercar"
+    },
+    {
+      "id": 3,
+      "nombre": "Electricos"
+    }
+  ],
+  "productos": [
+    {
+      "id": 101,
+      "nombre": "Veloce GT",
+      "precio": 199000,
+      "destacado": true,
+      "id_categoria": 1,
+      "imagen": "https://cdn.classic-trader.com/I/images/1920_1920_inset/vehicle_ad_standard_image_5aa3a968d76b44d0ac42b6c4e3b00226.jpg",
+      "descripcion": "GT italiano, 550 CV"
+    },
+    {
+      "id": 102,
+      "nombre": "Falcon X",
+      "precio": 320000,
+      "destacado": true,
+      "id_categoria": 2,
+      "imagen": "https://spots.ag/2024/03/27/ford-falcon-fg-x-xr8-c767627032024223821_1.jpg?1711575519",
+      "descripcion": "Supercar V8, 720 CV"
+    },
+    {
+      "id": 103,
+      "nombre": "E-Phantom",
+      "precio": 185000,
+      "destacado": false,
+      "id_categoria": 3,
+      "imagen": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
+      "descripcion": "Coup\u00e9 el\u00e9ctrico, 680 km autonomia"
+    },
+    {
+      "id": 104,
+      "nombre": "Razor S",
+      "precio": 245000,
+      "destacado": false,
+      "id_categoria": 2,
+      "imagen": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2018/10/03/15385613732575.jpg",
+      "descripcion": "Deportivo ligero, 640 CV"
+    }
+  ]
+}

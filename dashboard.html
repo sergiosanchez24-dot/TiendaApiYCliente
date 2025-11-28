@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dashboard - SuperCars Shop</title>
+<link rel="stylesheet" href="css/styles.css" /> <!-- estilos -->
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">SuperCars Shop</div> <!-- marca -->
+      <div class="nav">
+        <input id="search" class="search" placeholder="Buscar modelo..." /> <!-- buscador -->
+        <button id="cartBtn" class="btn secondary">Carrito</button> <!-- boton carrito -->
+        <button id="logout" class="btn">Cerrar sesión</button> <!-- cerrar sesión -->
+      </div>
+    </div>
+
+    <main>
+      <h2>Destacados</h2> <!-- destacados -->
+      <section id="featured" class="grid"></section> <!-- productos destacados -->
+      <h2>Categorías</h2> <!-- categorias -->
+      <section id="categories" class="grid"></section> <!-- listado categorias -->
+    </main>
+
+    <div class="footer">SuperCars Shop - Proyecto RA4</div> <!-- footer -->
+  </div>
+
+<script src="js/store.js"></script> <!-- carga tienda desde localStorage -->
+<script src="js/cart.js"></script> <!-- maneja carrito -->
+</body>
+</html>

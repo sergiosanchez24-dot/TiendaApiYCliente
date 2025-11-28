@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Login</title>
+<link rel="stylesheet" href="css/styles.css" /> <!-- estilos globales -->
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">SuperCars Shop</div> <!-- marca -->
+      <div class="nav"><a href="dashboard.html" class="btn secondary">Entrar como invitado</a></div> <!-- acceso invitado -->
+    </div>
+
+    <main>
+      <h2>Acceso a la tienda</h2> <!-- titulo -->
+      <form id="loginForm"> <!-- form login -->
+        <label>Usuario</label><br />
+        <input id="username" class="search" required /><br /> <!-- usuario -->
+        <label>Contraseña</label><br />
+        <input id="password" type="password" class="search" required /><br /><br /> <!-- password -->
+        <button class="btn" type="submit">Entrar</button> <!-- boton submit -->
+      </form>
+      <p id="msg" style="color:#f8d7da"></p> <!-- mensajes de error -->
+      <div class="login-examples">
+        <div class="login-examples-title">Usuarios de ejemplo:</div>
+        <div class="login-examples-list">
+          <div class="login-example"><span class="login-user">admin</span> / <span class="login-pass">admin123</span></div>
+          <div class="login-example"><span class="login-user">user</span> / <span class="login-pass">user123</span></div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+<script src="js/auth.js"></script> <!-- script auth -->
+</body>
+</html>

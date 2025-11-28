@@ -1,0 +1,68 @@
+/* Paleta: #CF6823 #A56337 #F96200 #7A563D #504035 #332E2B */
+/* estilos globales y responsivos */
+:root{ --accent:#CF6823; --accent-dark:#A56337; --accent-bright:#F96200; --brown:#7A563D; --muted:#504035; --bg:#332E2B; --text:#fff; } /* variables de color */
+*{box-sizing:border-box;} /* caja */
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#1f1b19);color:var(--text);margin:0;padding:0;} /* fondo y tipografia */
+.container{max-width:1100px;margin:30px auto;padding:20px;} /* contenedor centrado */
+.header{display:flex;align-items:center;justify-content:space-between;padding:10px 0;} /* header */
+.brand{font-size:1.6rem;font-weight:700;color:var(--accent);} /* marca */
+.btn{background:var(--accent);border:none;padding:8px 14px;border-radius:8px;color:white;cursor:pointer;} /* boton base */
+.btn.secondary{background:var(--accent-dark);} /* boton secundario */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;} /* grid productos */
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(0,0,0,0.06));padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.6);} /* tarjeta producto */
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px;} /* imagen producto */
+.card h3{margin:8px 0 4px;font-size:1.05rem;} /* titulo */
+.card p{margin:0 0 8px;font-size:0.9rem;color:#e6d5c9;} /* descripcion */
+.kv{display:flex;justify-content:space-between;align-items:center;} /* fila precio+boton */
+.price{font-weight:700;color:var(--accent-bright);} /* precio */
+.nav{display:flex;gap:8px;align-items:center;} /* nav simple */
+.search{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text);} /* buscador */
+.badge{background:var(--accent-bright);color:#222;padding:6px 10px;border-radius:999px;font-weight:700;} /* destacado */
+.footer{margin-top:30px;text-align:center;color:#c7b6ad;padding:10px 0;} /* footer */
+/* Caja de usuarios de ejemplo en login */
+.login-examples {
+	background: rgba(255,255,255,0.07);
+	border: 1px solid rgba(255,255,255,0.10);
+	border-radius: 10px;
+	margin: 22px 0 0 0;
+	padding: 14px 18px 10px 18px;
+	max-width: 340px;
+	color: #ffe6c7;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+}
+.login-examples-title {
+	font-weight: 600;
+	margin-bottom: 8px;
+	color: var(--accent-bright);
+	font-size: 1.08rem;
+}
+.login-examples-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.login-example {
+	background: rgba(0,0,0,0.10);
+	border-radius: 6px;
+	padding: 6px 10px;
+	font-size: 1rem;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+.login-user {
+	color: #fff;
+	font-weight: 500;
+}
+.login-pass {
+	color: #ffe6c7;
+	font-family: 'Consolas', monospace;
+	background: rgba(255,255,255,0.08);
+	border-radius: 4px;
+	padding: 1px 6px;
+}
+@media(max-width:600px){
+	.login-examples{max-width:100%;padding:12px;}
+}
+/* responsive tweaks */
+@media(max-width:600px){ .header{flex-direction:column;align-items:flex-start;} .card img{height:160px;} }
